@@ -16,3 +16,9 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+//A new Route
+Route::get('/foodmenu', function () {
+    //Send a variable, for test purposes
+    return view('foodmenu',['test'=>'Hamburgers']);
+});
