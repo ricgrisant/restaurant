@@ -23,11 +23,9 @@
                 {{$test}}
             </p>
 
-            @if($test === 'Hamburgers')
-                <p>This is the hamburgers menu </p>
-            @else
-                <p>This is not the hamburgers menu</p>
-            @endif
+            @for ($i = 0; $i < 5; $i++)
+               {{$i}} - Hey There! <br>
+            @endfor
         </div>
     </div>
     </body>
