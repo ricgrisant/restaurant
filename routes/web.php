@@ -19,6 +19,8 @@ Route::get('/', function () {
 
 //A new Route
 Route::get('/foodmenu', function () {
-    //Send a variable, for test purposes
-    return view('foodmenu',['test'=>'Hamburgers']);
+    //Test query parameters / request
+    $restaurant = request('restaurant');
+
+    return view('foodmenu',['test'=>'Hamburgers', 'restaurant'=>$restaurant ]);
 });

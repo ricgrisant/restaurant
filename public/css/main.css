@@ -7,6 +7,10 @@ footer{
     text-align: center;
     background-color: #5e52ad;
     padding: 20px;
+    position:absolute;
+    bottom:0;
+    width:100%;
+    height:auto; 
 }
 
 .navbar-brand>.brand-name{
@@ -16,6 +20,29 @@ footer{
     text-transform: uppercase;
 }
 
-.top-img{
+.top-div{
     margin-top: 20px;
+}
+
+.restaurants{
+    text-align: center;
+    margin: 10px;
+    font-size: 35px;
+    color: #5E52AD;
+    font-weight:600;
+}
+
+footer>.col>.fab{
+    color: white;
+}
+
+.redes{
+    margin: 30px;
+}
+
+.slogan{
+    color: #5E52AD;
+    font-weight: 600;
+    margin: 20px;
+    text-transform: capitalize;
 }
