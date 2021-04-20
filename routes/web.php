@@ -16,3 +16,11 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+//A new Route
+Route::get('/foodmenu', function () {
+    //Test query parameters / request
+    $restaurant = request('restaurant');
+
+    return view('foodmenu',['test'=>'Hamburgers', 'restaurant'=>$restaurant ]);
+});
