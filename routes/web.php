@@ -18,9 +18,11 @@ Route::get('/', function () {
 });
 
 //A new Route
-Route::get('/foodmenu', function () {
+Route::get('/restaurant', function () {
     //Test query parameters / request
-    $restaurant = request('restaurant');
+    return view('restaurant',['restaurant'=> request('name') ]);
+});
 
-    return view('foodmenu',['test'=>'Hamburgers', 'restaurant'=>$restaurant ]);
+Route::get('/restaurant/{id}', function ($id) {
+    return view('details',['menuId' => $id ]);
 });
