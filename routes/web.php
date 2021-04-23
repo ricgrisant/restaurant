@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\RestaurantController;
 
 /*
 |--------------------------------------------------------------------------
@@ -18,11 +19,8 @@ Route::get('/', function () {
 });
 
 //A new Route
-Route::get('/restaurant', function () {
-    //Test query parameters / request
-    return view('restaurant',['restaurant'=> request('name') ]);
-});
+Route::get('/restaurant',[RestaurantController::class,'index']);
 
-Route::get('/restaurant/{id}', function ($id) {
-    return view('details',['menuId' => $id ]);
-});
+// Route::get('/restaurant/{id}', function ($id) {
+
+// });
