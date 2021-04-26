@@ -21,6 +21,4 @@ Route::get('/', function () {
 //A new Route
 Route::get('/restaurant',[RestaurantController::class,'index']);
 
-// Route::get('/restaurant/{id}', function ($id) {
-
-// });
+Route::get('/restaurant/{id}',[RestaurantController::class,'show']);
