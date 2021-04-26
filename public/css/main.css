@@ -43,6 +43,49 @@ footer>.col>.fab{
 .slogan{
     color: #5E52AD;
     font-weight: 600;
-    margin: 20px;
     text-transform: capitalize;
+    margin-top: 20px;
+}
+
+
+.btn-knowMore{
+    background-color: #5e52ad;
+    height: 45px;
+    width: 170px;
+    font-weight: 700;
+    font-size: 15px;
+    border-radius: 25px;
+    border-color: #ff9a05;
+}
+
+.btn-knowMore:hover{
+    color: #5e52ad;
+    background-color: #ffc96d;
+    height: 45px;
+    width: 170px;
+    font-weight: 700;
+    font-size: 15px;
+    border-radius: 25px;
+    border-color: #ff9a05;
+}
+
+.btn-knowMore:active{
+    background-color: #5e52ad;
+    height: 45px;
+    width: 170px;
+    font-weight: 700;
+    font-size: 15px;
+    border-radius: 25px;
+    border-color: #ff9a05;
+}
+
+.btn-knowMore:focus{
+    color: #fff;
+    background-color: #5e52ad;
+    border-color: #0a58ca;
+    box-shadow: 0 0 0 3px #ffc166;
+}
+
+.sloganYellow{
+    color: #ff9a05;
 }

@@ -1,8 +1,7 @@
 @extends('layouts.layout')
 
-@section('restaurantMenu')
+@section('restaurantDetails')
     <div class="restaurants">
-        {{$restaurant}}
+        {{$menuId}}
     </div>
 @endsection
-
