@@ -2,17 +2,16 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Restaurant;
 use Illuminate\Http\Request;
 
 class RestaurantController extends Controller
 {
     public function index()
     {
-        $restaurants = [
-            ['name'=>'pizzaHut', 'category'=>'Pizza'],
-            ['name'=>'Burger King', 'category'=>'Hamburgers'],
-            ['name'=>'Popeyes', 'category'=>'Fried Chicken']
-        ];
+        //Retrieve data using eloquent
+
+        $restaurants = Restaurant::orderBy('name')->get();
 
         return view('restaurant',[
             'restaurants' => $restaurants
