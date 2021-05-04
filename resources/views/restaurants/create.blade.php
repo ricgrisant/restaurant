@@ -2,6 +2,6 @@
 
 @section('restaurantDetails')
     <div class="restaurants">
-        {{$menuId}}
+        <p>A view to create a new restaurant</p>
     </div>
 @endsection
