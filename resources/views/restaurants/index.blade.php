@@ -4,8 +4,9 @@
     <div class="restaurants">
         @foreach ($restaurants as $restaurant)
             <div class="row">
-                <p>Restaurante: {{$restaurant['name']}}</p>
-                <p>categoria: {{$restaurant['category']}}</p>
+                <p>Restaurant: {{$restaurant['name']}}</p>
+                <p>category: {{$restaurant['category']}}</p>
+                <a href="restaurants/{{$restaurant['id']}}"> See More</a>
             </div>
         @endforeach
     </div>

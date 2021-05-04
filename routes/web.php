@@ -19,6 +19,8 @@ Route::get('/', function () {
 });
 
 //A new Route
-Route::get('/restaurant',[RestaurantController::class,'index']);
+Route::get('/restaurants',[RestaurantController::class,'index']);
 
-Route::get('/restaurant/{id}',[RestaurantController::class,'show']);
+Route::get('/restaurants/create', [RestaurantController::class,'create']);
+
+Route::get('/restaurants/{id}',[RestaurantController::class,'show']);

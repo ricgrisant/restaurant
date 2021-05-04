@@ -11,15 +11,27 @@ class RestaurantController extends Controller
     {
         //Retrieve data using eloquent
 
-        $restaurants = Restaurant::orderBy('name')->get();
+        $restaurants = Restaurant::all();
 
-        return view('restaurant',[
+        return view('restaurants.index',[
             'restaurants' => $restaurants
         ]);
     }
 
+    
     public function show($id)
     {
-        return view('details',['menuId' => $id ]);
+        //Obtain data based on id
+        $restaurant = Restaurant::findOrFail($id);
+        // Another way 
+        // |
+        // v
+        // $restaurant = Restaurant::where('id',$id)->get();
+        return view('restaurants.show',['restaurantInfo' => $restaurant ]);
+    }
+
+    public function create()
+    {
+        return view('restaurants.create');
     }
 }
