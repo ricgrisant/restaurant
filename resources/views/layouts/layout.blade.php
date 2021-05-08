@@ -16,14 +16,36 @@
     </head>
     <body class="antialiased">
 
-        <nav class="navbar navbar-light bg-light">
+        <nav class="navbar navbar-expand-md navbar-light bg-light">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">
+                <a class="navbar-brand" href="/">
                     <span class="brand-name">trinche</span> 
                 </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="/restaurants">
+                                <span class="brand-name">Restaurants</span> 
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/restaurants/create">
+                                <span class="brand-name">Create a Restaurant</span> 
+                            </a>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
             </div>
         </nav>
-
+        
         @yield('header')
 
         @yield('restaurant')
