@@ -7,13 +7,11 @@ footer{
     text-align: center;
     background-color: #5e52ad;
     padding: 20px;
-    position:absolute;
-    bottom:0;
     width:100%;
     height:auto; 
 }
 
-.navbar-brand>.brand-name{
+.brand-name{
     color: #5e52ad;
     font-weight: 800;
     padding: 5px;
@@ -84,6 +82,21 @@ footer>.col>.fab{
     background-color: #5e52ad;
     border-color: #0a58ca;
     box-shadow: 0 0 0 3px #ffc166;
+}
+
+.btn-primary {
+    background-color: #5E52AD;
+    border-color: #5E52AD;
+}
+
+.btn-primary:hover{
+    background-color: #5E52AD;
+    border-color: #5E52AD;
+}
+
+btn-primary:focus{
+    background-color: #5E52AD;
+    border-color: #5E52AD;
 }
 
 .sloganYellow{
