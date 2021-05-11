@@ -9,7 +9,8 @@
         </div>
         <div class="row">
             <div class="mt-5 d-flex justify-content-center">
-                <form method="POST">
+                <form action="/restaurants" method="POST">
+                  @csrf
                     <div class="row mb-3">
                       <label for="inputName" class="col-12 col-form-label">Name</label>
                       <div class="col-12">
@@ -31,7 +32,7 @@
                       <div class="row mb-3">
                         <label for="inputCategory" class="col-12 col-form-label">Category</label>
                         <div class="col-12">
-                            <select class="form-select">
+                            <select name="category" class="form-select">
                               <option value="" disabled selected>Select one category</option>
                               <option value="Pizza">Pizza</option>
                               <option value="Hamburgers">Hamburgers</option>
