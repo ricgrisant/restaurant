@@ -19,7 +19,13 @@ footer{
 }
 
 .top-div{
-    margin-top: 20px;
+    height: 25rem;
+    background-position-x: 0px;
+    background-position-y: 80%;
+    background-image: url(../img/header.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .restaurants{
@@ -51,7 +57,7 @@ footer>.col>.fab{
     width: 170px;
     font-weight: 700;
     font-size: 15px;
-    border-radius: 25px;
+    border-radius: 5px;
     border-color: #ff9a05;
 }
 
@@ -62,7 +68,6 @@ footer>.col>.fab{
     width: 170px;
     font-weight: 700;
     font-size: 15px;
-    border-radius: 25px;
     border-color: #ff9a05;
 }
 
@@ -72,7 +77,6 @@ footer>.col>.fab{
     width: 170px;
     font-weight: 700;
     font-size: 15px;
-    border-radius: 25px;
     border-color: #ff9a05;
 }
 
@@ -100,4 +104,29 @@ btn-primary:focus{
 
 .sloganYellow{
     color: #ff9a05;
+}
+
+.form-new-rest{
+    margin-left: 10px;
+    color: #5e52ad;
+    background: #c8c0fb94;
+    padding: 50px;
+    border: 1px solid #5e52ad08;
+    border-radius: 10px;
+    margin-bottom: 100px;
+    box-shadow: -10px 10px 0px 0px #5e52ad;
+}
+
+.form-control:focus {
+    color: black;
+    background-color: #f9fafb;
+    border-color: #5e52ad;
+    outline: 0;
+    box-shadow: 0px 0px 0 0px #f9fafb;
+}
+
+.form-select:focus {
+    border-color: #5e52ad;
+    outline: 0;
+    box-shadow: 0px 0px 0 0px #f9fafb;
 }

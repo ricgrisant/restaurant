@@ -9,7 +9,7 @@
         </div>
         <div class="row">
             <div class="mt-5 d-flex justify-content-center">
-                <form action="/restaurants" method="POST">
+                <form class="form-new-rest" action="/restaurants" method="POST">
                   @csrf
                     <div class="row mb-3">
                       <label for="inputName" class="col-12 col-form-label">Name</label>
