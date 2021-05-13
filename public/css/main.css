@@ -2,6 +2,10 @@ body {
     font-family: 'Nunito', sans-serif;
 }
 
+.navbar{
+    background: #5e52ad;
+}
+
 footer{
     color: white;
     text-align: center;
@@ -12,20 +16,14 @@ footer{
 }
 
 .brand-name{
-    color: #5e52ad;
+    color: white;
     font-weight: 800;
     padding: 5px;
     text-transform: uppercase;
 }
 
 .top-div{
-    height: 25rem;
-    background-position-x: 0px;
-    background-position-y: 80%;
-    background-image: url(../img/header.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-color:#5e52ad;;
 }
 
 .restaurants{
@@ -45,14 +43,15 @@ footer>.col>.fab{
 }
 
 .slogan{
-    color: #5E52AD;
+    color:white;
     font-weight: 600;
     text-transform: capitalize;
 }
 
 
 .btn-knowMore{
-    background-color: #5e52ad;
+    background-color: white !important;
+    color: #5e52ad;
     height: 45px;
     width: 170px;
     font-weight: 700;
@@ -62,8 +61,8 @@ footer>.col>.fab{
 }
 
 .btn-knowMore:hover{
+    background-color: white !important;
     color: #5e52ad;
-    background-color: #ffc96d;
     height: 45px;
     width: 170px;
     font-weight: 700;
@@ -72,7 +71,7 @@ footer>.col>.fab{
 }
 
 .btn-knowMore:active{
-    background-color: #5e52ad;
+    background-color: white !important;
     height: 45px;
     width: 170px;
     font-weight: 700;
@@ -82,7 +81,7 @@ footer>.col>.fab{
 
 .btn-knowMore:focus{
     color: #fff;
-    background-color: #5e52ad;
+        color: #5e52ad;
     border-color: #0a58ca;
     box-shadow: 0 0 0 3px #ffc166;
 }
@@ -130,3 +129,46 @@ btn-primary:focus{
     outline: 0;
     box-shadow: 0px 0px 0 0px #f9fafb;
 }
+
+.top-text{
+    text-align: justify;
+    color: white;
+}
+
+.h-text-color {
+    color: #5E52AD;
+}
+
+.card{
+    border-radius: 1rem;
+}
+
+.backgr-card-1{
+    background-image: url(../img/card-1.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.backgr-card-2{
+    background-image: url(../img/card-2.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.backgr-card-3{
+    background-image: url(../img/card-3.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+/* @media (min-width: 750px) {
+    .top-div{
+        height: 25rem;
+        background-position-x: 0px;
+        background-position-y: 80%;
+        background-image: url(../img/header.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+  } */
