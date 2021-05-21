@@ -161,14 +161,8 @@ btn-primary:focus{
     background-size: cover;
 }
 
-/* @media (min-width: 750px) {
-    .top-div{
-        height: 25rem;
-        background-position-x: 0px;
-        background-position-y: 80%;
-        background-image: url(../img/header.jpg);
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
+/* @media (max-width: 768px) {
+    .main{
+        height: 100% !important;
     }
   } */
