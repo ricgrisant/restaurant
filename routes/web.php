@@ -23,3 +23,4 @@ Route::get('/restaurants',[RestaurantController::class,'index']);
 Route::get('/restaurants/create', [RestaurantController::class,'create']);
 Route::post('/restaurants', [RestaurantController::class,'store']);
 Route::get('/restaurants/{id}',[RestaurantController::class,'show']);
+Route::delete('/restaurants/{id}',[RestaurantController::class,'destroy']);

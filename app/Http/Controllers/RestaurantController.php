@@ -49,4 +49,15 @@ class RestaurantController extends Controller
         //To send a message when we save data successfully use with parameter
         return redirect('/')->with('message','Restaurant Added to Trinche Successfully!');
     }
+
+    public function destroy($id)
+    {
+        $restaurant = Restaurant::findOrFail($id);
+
+        $restaurant->delete();
+
+        $message = "Restaurant with id -> $id have been deleted Successfully";
+
+        return redirect('/restaurants')->with('deleteMessage',$message);
+    }
 }

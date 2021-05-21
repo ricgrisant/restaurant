@@ -16,7 +16,7 @@
     </head>
     <body class="antialiased">
 
-        <nav class="navbar navbar-expand-md navbar-light">
+        <nav class="navbar navbar-expand-md navbar-dark">
             <div class="container-fluid">
                 <a class="navbar-brand" href="/">
                     <span class="brand-name">trinche</span> 
@@ -34,20 +34,27 @@
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="/restaurants/create">
-                                <span class="brand-name">Create a Restaurant</span> 
+                                <span class="brand-name">Create</span> 
                             </a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
+
+        <div class="main" style="height: 100%">
+            @yield('header')
+
+            @yield('restaurant')
+
+            @yield('restaurantDetails')
+        </div>
         
-        @yield('header')
+       
 
-        @yield('restaurant')
-
-        @yield('restaurantDetails')
-
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path fill="#5E52AD" fill-opacity="1" d="M0,288L40,277.3C80,267,160,245,240,250.7C320,256,400,288,480,261.3C560,235,640,149,720,144C800,139,880,213,960,240C1040,267,1120,245,1200,213.3C1280,181,1360,139,1400,117.3L1440,96L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"></path>
+        </svg>
         <footer>
             <div class="container">
                 <div class="row redes">
@@ -64,7 +71,7 @@
 
                 <div class="row">
                     <div class="col m-auto">
-                        Copyright, Ricardo's Food 2020
+                        Copyright, Ricardo's Food 2021
                     </div>
                 </div>
             </div>
